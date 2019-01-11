@@ -50,7 +50,7 @@
 					@if (User.Identity.IsAuthenticated)
 					{
 					<div class="btn-group">
-						<button type="button" class="btn btn-primary btn-sm"><span class="fa fa-user-circle-o"></span> @User.Identity.Name</button>
+						<a href="@Url.Action("Index","Dashboard")" class="btn btn-primary btn-sm"><span class="fa fa-user-circle-o"></span> @User.Identity.Name</a>
 						<button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only">Toggle Dropdown</span>
 						</button>

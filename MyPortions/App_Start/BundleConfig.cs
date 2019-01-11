@@ -15,7 +15,7 @@ namespace MyPortions
 									"~/Scripts/bootstrap.bundle.js",
 									"~/Scripts/respond.js",
 									"~/Content/Selectize/js/standalone/selectize.js",
-								
+									"~/Scripts/Chart.js",
 									"~/Scripts/jquery-ui-1.12.1.js",
 									"~/Scripts/DataTables/jquery.dataTables.min.js",
 									"~/Scripts/DataTables/dataTables.bootstrap4.min.js",
