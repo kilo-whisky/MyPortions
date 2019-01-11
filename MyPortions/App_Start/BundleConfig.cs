@@ -8,22 +8,29 @@ namespace MyPortions
 		// For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
 		public static void RegisterBundles(BundleCollection bundles)
 		{
-			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-									"~/Scripts/jquery-{version}.js"));
+			bundles.Add(new ScriptBundle("~/bundles/Scripts").Include(
+									"~/Scripts/jquery-{version}.js",
+									"~/Scripts/jquery.validate*",
+									"~/Scripts/modernizr-*",
+									"~/Scripts/bootstrap.bundle.js",
+									"~/Scripts/respond.js",
+									"~/Content/Selectize/js/standalone/selectize.js",
+								
+									"~/Scripts/jquery-ui-1.12.1.js",
+									"~/Scripts/DataTables/jquery.dataTables.min.js",
+									"~/Scripts/DataTables/dataTables.bootstrap4.min.js",
+									"~/Scripts/DataTables/dataTables.fixedHeader.js",
+									"~/Scripts/Site.js"
+									));
 
-			bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-									"~/Scripts/jquery.validate*"));
-
-			// Use the development version of Modernizr to develop with and learn from. Then, when you're
-			// ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-			bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-									"~/Scripts/modernizr-*"));
-
-			bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-								"~/Scripts/bootstrap.js"));
-
-			bundles.Add(new StyleBundle("~/Content/css").Include(
+			bundles.Add(new StyleBundle("~/Content/Styles").Include(
 								"~/Content/bootstrap.css",
+								"~/Content/font-awesome.css",
+								"~/Content/Selectize/css/selectize.css",
+								"~/Content/themes/base/jquery-ui.css",
+								"~/Content/datatables/css/buttons.bootstrap.min.css",
+								"~/Content/datatables/css/dataTables.bootstrap4.min.css",
+								"~/Content/datatables/css/fixedHeader.bootstrap4.css",
 								"~/Content/site.css"));
 		}
 	}

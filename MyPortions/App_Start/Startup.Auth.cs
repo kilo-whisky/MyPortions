@@ -45,24 +45,24 @@ namespace MyPortions
             // This is similar to the RememberMe option when you log in.
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
-            // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+			//Uncomment the following lines to enable logging in with third party login providers
+			//app.UseMicrosoftAccountAuthentication(
+			//		clientId: "9611a578-8887-4398-a004-7d44346c3429",
+			//		clientSecret: "ayyQPM70;%{mmgkWWVV625*");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+			app.UseTwitterAuthentication(
+				 consumerKey: "oPTUOTNouEynWWtsu3IDTLiG1 ",
+				 consumerSecret: "Ca7zV9zOwRDyz9cxPPHNyB2bioXw6XKghUdirLg8T134AaxI9r ");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+			app.UseFacebookAuthentication(
+				 appId: "2228554074132732",
+				 appSecret: "3622fa6cc33eb6f9ae47869afcb736ba");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
-        }
-    }
+			app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+			{
+				ClientId = "916455193994-nqlc1pbbl5bdot2caaet1tms2utpl1hm.apps.googleusercontent.com",
+				ClientSecret = "XhI__6S3tL9F-Y_ci9pIjHUu"
+			});
+		}
+	}
 }
