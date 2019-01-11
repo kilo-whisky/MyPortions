@@ -49,7 +49,18 @@
 				<div class="input-group mb-3">
 					@if (User.Identity.IsAuthenticated)
 					{
-						<button class="btn btn-sm btn-primary"><span class="fa fa-user-circle-o"></span> @User.Identity.Name</button>
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary btn-sm"><span class="fa fa-user-circle-o"></span> @User.Identity.Name</button>
+						<button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="sr-only">Toggle Dropdown</span>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="#">Settings</a>
+							<a class="dropdown-item" href="#">Change Password</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="@Url.Action("_LogOff","Account")">Logout</a>
+						</div>
+					</div>
 					}
 					else
 					{
